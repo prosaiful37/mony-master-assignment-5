@@ -17,6 +17,13 @@
 
 // handle total expense even done
 document.getElementById('calculate-btn').addEventListener('click', function(){
+   
+    //
+    const incomeInput = document.getElementById('income-input');
+    const incomeInputFiled = incomeInput.value;
+    const incomeInputText = parseInt(incomeInputFiled);
+
+    
     // get expense input element
     const foodInput = document.getElementById('food-input');
     const foodInputField = foodInput.value;
@@ -33,6 +40,7 @@ document.getElementById('calculate-btn').addEventListener('click', function(){
     const clothInputField = clothInput.value;
     const clothInputText = parseInt(clothInputField);
     // const clothInput = getInputTotal('cloth-input');
+
     // total expense calculete
     const totalExpense = document.getElementById('total-exp');
     const totalExpenseBalance = totalExpense.innerText;
@@ -43,7 +51,19 @@ document.getElementById('calculate-btn').addEventListener('click', function(){
     const totalBalanceExpense = foodInputText + rentInputText + clothInputText;
     // const totalBalanceExpense = foodInput + rentInput + clothInput;
     totalExpense.innerText =  totalBalanceExpense;
+
+    // update total balance 
+    const totalBalance = document.getElementById('total-balance');
+    const totalBalanceText = totalBalance.innerText;
+    const totalBalanceField = parseInt(totalBalanceText);
+    const balance = incomeInputText - totalBalanceExpense;
+    totalBalance.innerText = balance;
+  
+
+
+
     
+   
    
        
 
