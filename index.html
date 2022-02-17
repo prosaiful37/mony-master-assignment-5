@@ -12,14 +12,63 @@
 </head>
 <body>
     
-    <section class="container bg-white my-5">
-        <h2>Money Master 💰 </h2>
-        <div class="row">
+    <section class="container bg-white my-5 p-5">
+        <h2 class="text-center">Money Master 💰 </h2>
+        <div class="row g-5">
             <div class="col-lg-6">
-                <img src="" alt="">
+                <img class="img-fluid" src="assets/images/img1.jpg" alt="">
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 calculate-right">
+                <div class="container">
+                        <div class="row mb-3">
+                            <h5 class=" py-3">Income</h5>
+                            <label for="" class="col-sm-2 col-form-label">Income:</label>
+                            <div class="col-sm-6">
+                              <input type="text" class="form-control bg-secondary text-white" id="" >
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <h5 class="py-3">Expenses</h5>
+                            <label for="" class="col-sm-2 col-form-label">Food:</label>
+                            <div class="col-sm-6">
+                              <input  type="text" class="form-control bg-secondary text-white" id="food-input">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="" class="col-sm-2 col-form-label">Rent:</label>
+                            <div class="col-sm-6">
+                              <input type="text" class="form-control bg-secondary text-white" id="rent-input" >
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="" class="col-sm-2 col-form-label">Cloth:</label>
+                            <div class="col-sm-6">
+                              <input type="text" class="form-control bg-secondary text-white" id="text-input" >
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <button id="calculate-btn" type="button" class="btn btn-primary btn-sm col-sm-5 ">Calculate</button>
+                        </div>
+                        <h5 class="fs-5">Total Expenses: <span id="total-exp"></span> </h5>
+                        <h5 class="fs-5">Balance: </h5>
 
+                        <div class="row saving">
+                            <span>
+                                <label for="" class="col-sm-2 col-form-label">Save:</label>
+                                <input type="text" class="col-sm-2"> % 
+                                <button type="button" class="btn btn-primary btn-sm col-sm-2">SAVE</button>
+                            </span>
+                            
+                    
+                            <h5 class="fs-5 pt-4">Saving Amount: </h5>
+                            <h5 class="fs-5">Remaining Balance: </h5>
+                            
+                        </div>
+                        
+
+                       
+                </div>
+                
             </div>
         </div>
     </section>

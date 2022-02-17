@@ -2,3 +2,12 @@
 body{
     background-color: #E5E5E5;
 }
+
+/* .income-total{
+    display: flex;
+    margin: auto;
+} */
+
+.calculate-right{
+    background-color: #F8F8F8;
+}
